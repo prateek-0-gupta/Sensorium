@@ -1,0 +1,168 @@
+/*
+#canvas-basic {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}*/
+
+box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Web Font */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
+
+/* I */
+.char1 {
+  color: white;
+  margin-left: -.2em;
+  z-index: 4;
+/*  text-shadow: 0.05em 0.05em 0.2em rgba(10,10,10,0.9);
+*/}
+
+/* AM */
+.char2 {
+  color: white;
+ z-index: 3; 
+ margin-left: 2.5em;
+  top: 0.08em;
+/*    text-shadow: -0.02em 0.02em 0.2em rgba(10,10,10,0.9);
+*/
+}
+
+/* A */
+.char3 {
+  color: white;
+  z-index: 9;
+  margin-left: -.225em;
+/*  text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
+*/  
+}
+
+/* L */
+.char4 {
+  color: white;
+  z-index: 5;
+  margin-left: 1.1em;
+/*  text-shadow: 0.02em -0.02em 0.2em rgba(10,10,10,0.9);
+*/}
+
+
+.linear-wipe {
+  text-align: center;
+  
+background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+-webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+.glitch1{
+  color: #1c1c1c;
+  top:3.5em;
+  left: 11em;
+  z-index: 99;
+  font-size: 0.71em;
+  font-weight: 1;
+  position: absolute;
+    animation: glitch 0.5s ease infinite;
+
+}
+.glitch2{
+    font-weight: 1;
+
+  color: #1c1c1c;
+  top:3.8em;
+  left: 13em;
+  z-index: 99;
+  font-size: 0.71em;
+  position: absolute;
+  animation: glitch 0.5s ease infinite;
+}
+.below{
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: below;
+     -moz-background-clip: below;
+          background-clip: below;
+  background-clip: below;
+  text-fill-color: transparent;
+  -webkit-background-clip: below;
+  -webkit-text-fill-color: transparent;
+  
+-webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;  
+}
+@-webkit-keyframes glitch{
+  0% {
+        transform: translate(0)
+    }
+    20% {
+        transform: translate(1px, 0px)
+    }
+    40% {
+        transform: translate(-1px, 0px)
+    }
+    60% {
+        transform: translate(1px, 0px)
+    }
+    80% {
+        transform: translate(-1px, 0px)
+    }
+    to {
+        transform: translate(0)
+    }
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+
