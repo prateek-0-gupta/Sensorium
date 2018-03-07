@@ -1,0 +1,271 @@
+body {
+  font-family: 'Lato';
+    background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Catamaran';
+  font-weight: 800 !important;
+}
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+.rounded-pill {
+  border-radius: 5rem;
+}
+.form-label{
+  color: white !important;
+  font-weight: bolder;
+    font-family: 'Catamaran';
+
+}
+.top-nav-collapse {
+    background-color: white !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 768px) {
+      .navbar:not(.top-nav-collapse) {
+          background: white !important;
+      }
+}
+
+header.masthead {
+  position: relative; /*I like the page with out this try commenting this line*/
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);  background-repeat: no-repeat;
+  animation: Gradient infinite 3s ease-in-out;
+  animation-fill-mode: backwards; 
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 750px;
+}
+
+header.masthead .masthead-content {
+  z-index: 1;
+  position: relative;
+}
+
+header.masthead .masthead-content .masthead-heading {
+  font-size: 4rem;
+}
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem;
+}
+.masthead-subheading{
+  color :rgba(0,0,0,0.5);
+  font-size: 8rem;
+}
+header.masthead .bg-circle {
+  z-index: 0;
+  position: absolute;
+  border-radius: 100%;
+background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+ 
+  animation: Gradienttt infinite 3s ease-in-out;
+  animation-fill-mode: backwards; 
+}
+
+header.masthead .bg-circle-1 {
+  height: 90rem;
+  width: 90rem;
+  bottom: -55rem;
+  left: -55rem;
+/*   animation: floater infinite 3s ease-in-out;
+*/}
+
+header.masthead .bg-circle-2 {
+  height: 50rem;
+  width: 50rem;
+  top: -25rem;
+  right: -25rem;
+/*  animation: floater infinite 3s ease-in-out;
+*/}
+
+header.masthead .bg-circle-3 {
+  height: 20rem;
+  width: 20rem;
+  bottom: -10rem;
+  right: 5%;/*
+  animation: floater infinite 3s ease-in-out;
+  animation-fill-mode: backwards; */
+}
+
+header.masthead .bg-circle-4 {
+  height: 30rem;
+  width: 30rem;
+  top: -5rem;
+  right: 35%;
+/*   animation: floater infinite 3s ease-in-out;
+*/}
+/*@keyframes floater{
+  0%{
+    transform: translate3d(0px, 0px, 0px);
+  }
+  50%{
+    transform: translate3d(0px, -15px, 0px);
+  }
+  100%{
+    transform: translate3d(0px, 0px, 0px);
+  }
+}*/
+@keyframes Gradient{
+  0%{
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+
+  }
+  25%{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+
+  }
+  50%{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+
+  }
+  75%{
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+
+  }
+  100%{
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+
+  }
+}
+@keyframes Gradienttt{
+  0%{
+      background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  }
+  25%{
+      background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  }
+  50%{
+      background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  }
+  75%{
+      background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+
+  }
+  100%{
+      background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  }
+}
+.square-border{
+  border:10px white solid;
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  position: absolute;   
+  z-index: 99;
+
+  border-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%) 1% round;
+  left: 300px;
+  top: -140px;
+  mix-blend-mode: luminosity;
+}
+.s-heading{
+  font-size: 7em;
+}
+.heading-1{
+   left: 650px;
+   top:-100px;
+   font-size: 3rem !important;
+   position: absolute;
+   z-index: -99;
+
+}
+.heading-2{
+   left: 85px;
+   top: 170px;
+   font-size: 3rem !important;
+   position: absolute;
+}
+.title-border{
+   
+    position: absolute;
+    z-index: -1;
+    height: 50px;
+    width: 400px;
+    border:5px solid white;
+    border-image:linear-gradient(to right, #ff758c 0%, #ff7eb3 100%) 1% round;
+}
+.btn-grad{
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  border-radius: 25px;
+  color: white;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
+.btn-grad:hover{
+      color: white;
+}
+.learn-btn{
+  margin-left: 700px;
+}
+.bg-skew{
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+   transform: skew(0deg, 10deg);
+   position: absolute;
+   z-index: -99;
+   height: 100%;
+   width: 100%;
+   margin-top: -10%;
+}
+.bg-content{
+  margin-top: -25%;
+}
+.square-1{
+  background-color: white;
+  width: 200px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 200px;
+  position: absolute;
+}
+.square-2{
+  background-color: white;
+  width: 200px;
+  height: 10px;
+  margin-top: 200px;
+  margin-left: 800px;
+    position: absolute;
+}
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 6rem;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem;
+  }
+}
+
+.bg-primary {
+  background-color: #ee0979 !important;
+}

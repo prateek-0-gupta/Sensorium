@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sensorium</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MDb.CSS Material skin for bootstrap-->
+    <link href="css/mdb.css" rel="stylesheet">
+    <!-- Animate.CSS for Animations -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <!--Custom Styles Do not open if you don't know what to do -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- just joking there nothing to mess around -->
+  </head>
+
+  <body>
+    <section style="margin-top: 400px;">
+      <div class="container mt-5">
+        <div class="row mt-5 align-items-center">
+          <div class="col-lg-12">
+              <div class="flipbook-viewport">
+                <div class="container-f">
+                  <div class="flipbook">
+                    <div class="hard">
+                      <div class="p-5 text-center">
+                        <h2 class="top-secret">Top Secret</h2>
+                        <p><span class="secret-text">Lorem ipsum dolor</span> sit amet, consectetur <span class="secret-text">adipisicing</span> elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam <span class="secret-text">exercitationem</span>, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, <span class="secret-text">beatae</span> obcaecati.</p>
+                        <code>By registring for sensorium you agree to the terms & conditions!</code>
+                      </div>
+                    </div>
+                    <div class="hard"></div>
+                    <div class=""> <!-- page 1 -->
+                      <div class="row p-5">
+                                <div class="col-md-12 p-5">
+                                  <h1>ALrighty than lets register you up</h1>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <div class="md-form">
+                                            <input type="text" id="contact-name" class="form-control" placeholder="Your Cool name">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <div class="md-form">
+                                            <input type="text" id="contact-name" class="form-control" placeholder="And Your Last name">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <div class="md-form">
+                                            <input type="text" id="contact-name" class="form-control" placeholder="And an Email Id would suffice the need of this field">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <div class="md-form">
+                                            <input type="text" id="contact-email" class="form-control" placeholder="Pick a secure password">
+                                            <label for="contact-email" class="form-label">Your email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                    <div>
+                      <div class="row p-5">
+                        <div class="col-md-6">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div style="background-image:url(pages/3.jpg)"></div>
+                    <div style="background-image:url(pages/4.jpg)"></div>
+                    <div style="background-image:url(pages/5.jpg)"></div>
+                    <div style="background-image:url(pages/6.jpg)"></div>
+                    <div style="background-image:url(pages/7.jpg)"></div>
+                    <div style="background-image:url(pages/8.jpg)"></div>
+                    <div style="background-image:url(pages/9.jpg)"></div>
+                    <div style="background-image:url(pages/10.jpg)"></div>
+                    <div style="background-image:url(pages/11.jpg)"></div>
+                    <div style="background-image:url(pages/12.jpg)"></div>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+          <div class="col-lg-6">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script src="js/jquery.min.1.7.js"></script>
+    <script src="js/modernizr.2.5.3.min.js"></script>
+    <script>
+      var rellax = new Rellax('.rellax');
+    </script>
+    <script type="text/javascript">
+
+function loadApp() {
+
+  // Create the flipbook
+
+  $('.flipbook').turn({
+      // Width
+
+      width:922,
+      
+      // Height
+
+      height:600,
+
+      // Elevation
+
+      elevation: 50,
+      
+      // Enable gradients
+
+      gradients: true,
+      
+      // Auto center this flipbook
+
+      autoCenter: true
+
+  });
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+  test : Modernizr.csstransforms,
+  yep: ['js/turn.js'],
+  nope: ['js/turn.html4.min.js'],
+  both: ['css/basic.css'],
+  complete: loadApp
+});
+
+</script>
+  </body>
+
+</html>
